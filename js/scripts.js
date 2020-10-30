@@ -3,30 +3,29 @@ $(document).ready(function() {
     event.preventDefault();
 
     let userInput = $("input#number").val();
-    let result = change(userInput);
+    
 
 function change(userInput) {
-  const numArray = [];
+  const numbers = [];
   for (let i = 0; i <= userInput; i++) {
     let element = i.toString();
 
     if (element.includes(3)) {
-      numArray.push("Won't you be my neighbor"+ ", ")
+      numbers.push("Won't you be my neighbor"+ ",")
     } else if (element.includes(2)){
-      numArray.push("Boop!" + ", ")
+      numbers.push("Boop!" + ",")
     } else if (element.includes(1)){
-      numArray.push("Beep!" + ", ")
-    } else{
-      numArray.push(i + ", ")
+      numbers.push("Beep!" + ",")
+    } else {
+      numbers.push(i + ",")
     }
 
-  }
-return numArray
-}
-    
-
-    $("#output").append(result);
-    // $("form#beep")[0].reset();
+    }
+    return numbers;
+    }
+    let final = change(userInput);
+    console.log(final);
+    $("#output").append(final);
     });
   });
 

@@ -9,3 +9,6 @@ exepct: number array to equal [0 to users number]
 
 test: make const array of replacement words or sentences
 expect: const words = "words,sentences"
+
+test: display results on index.
+expect: output class to display none.
