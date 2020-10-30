@@ -2,17 +2,16 @@ $(document).ready(function() {
   $("#rogers").submit(function(event) {
     event.preventDefault();
 
-    let number = parseInt($("input#userInput").val());
-    let array = [0];
-    array.push(number);
-    let string = array.toString();
-    let newString = string.split("");
-    console.log(newString);
+    let userNumber = $("input#userInput").val()
+    let numArray = [0]
+    function elementList(userNumber) {
+      while (userNumber > numArray.length - 1) {
+        numArray.push(numArray.length);
     
-    
- 
-    
-
+      };
+    };
+    elementList(userNumber)
+    console.log(numArray);
 
   });
 });
