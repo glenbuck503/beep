@@ -2,35 +2,30 @@ $(document).ready(function() {
   $("form#beep").submit(function() {
     event.preventDefault();
 
-    let userInput = $("input#number").val();
-    
+  let userInput = $("input#number").val();
 
-function replace(userInput) {
-  const numbers = [];
-  for (let i = 0; i <= userInput; i++) {
-    let element = i.toString();
+  function replace(userInput) {
+    const numbers = [];
+    for (let i = 0; i <= userInput; i++) {
+      let element = i.toString();
 
-    if (element.includes(3)) {
-      numbers.push("Won't you be my neighbor"+ ", ")
-    } else if (element.includes(2)) {
-      numbers.push("Boop!" + ", ")
-    } else if (element.includes(1)) {
-      numbers.push("Beep!" + ", ")
-    } else {
-      numbers.push(i + ", ")
-    }
-    
-
-    }
-    return numbers;
-    }
-    
-    
-    let final = replace(userInput);
-    
-    
-    $("#output").append(final);
-    console.log(final);
+      if (element.includes(3)) {
+        numbers.push("Won't you be my neighbor"+ ", ")
+      } else if (element.includes(2)) {
+        numbers.push("Boop!" + ", ")
+      } else if (element.includes(1)) {
+        numbers.push("Beep!" + ", ")
+      } else {
+        numbers.push(i + ", ")
+      }
+      
+      }
+      return numbers;
+      }
+      
+      let final = replace(userInput);
+      $("#output").show();
+      $("#output").append(final);
     });
   });
 
