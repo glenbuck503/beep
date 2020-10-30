@@ -12,3 +12,9 @@ expect: const words = "words,sentences"
 
 test: display results on index.
 expect: output class to display none.
+
+test: change output box to colored
+expect : output { color : };
+
+test: fix output spacing
+expect: .push(" ,")

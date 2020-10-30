@@ -4,7 +4,18 @@
 
 body {
     background-image: url(../img/rogers.jpg);
-    background-repeat: repeat-y;
-    padding : 350px 300px;
+    /* background-repeat: repeat-y; */
+    padding : 490px 300px;
     background-size: cover;
+}
+
+#output {
+  color: white;
+  font-size: 34px;
+  background-color: #db7575;
+}
+
+p {
+  color:white;
+  font-size: 34px;
 }
