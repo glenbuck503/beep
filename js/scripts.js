@@ -12,9 +12,9 @@ function change(userInput) {
 
     if (element.includes(3)) {
       numbers.push("Won't you be my neighbor"+ ",")
-    } else if (element.includes(2)){
+    } else if (element.includes(2)) {
       numbers.push("Boop!" + ",")
-    } else if (element.includes(1)){
+    } else if (element.includes(1)) {
       numbers.push("Beep!" + ",")
     } else {
       numbers.push(i + ",")

@@ -1,3 +1,10 @@
 #textbar {
   display: none;
 }
+
+body {
+    background-image: url(../img/rogers.jpg);
+    background-repeat: repeat-y;
+    padding : 350px 300px;
+    background-size: cover;
+}
