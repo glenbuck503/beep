@@ -3,10 +3,15 @@ $(document).ready(function() {
     event.preventDefault();
 
     let number = parseInt($("input#userInput").val());
-    let array = [0,]
-    console.log(number);
+    let array = [0];
     array.push(number);
-    console.log(array);
+    let string = array.toString();
+    let newString = string.split("");
+    console.log(newString);
+    
+    
+ 
+    
 
 
   });
